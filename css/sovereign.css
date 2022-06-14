@@ -1,0 +1,10 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html{
+  background-color: black;
+  color: rgb(233, 233, 233);
+}
