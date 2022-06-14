@@ -1,0 +1,49 @@
+{
+  "hidefiles.configurationType": "local",
+  "hidefiles.globalConfig": {
+    "profiles": [
+      {
+        "name": "Default",
+        "detail": "",
+        "description": "Test",
+        "hidden": [
+          ".nuxt",
+          ".vscode/",
+          ".firebase/",
+          ".github/",
+          "dist/",
+          "node_modules",
+          ".editorconfig",
+          ".firebaserc",
+          ".gitignore",
+          "package-lock.json"
+        ]
+      },
+      {
+        "name": "Strict",
+        "detail": "Hide everything not immediately required",
+        "hidden": [
+          "$Default"
+        ]
+      }
+    ]
+  },
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    ".nuxt": true,
+    ".vscode/": true,
+    ".firebase/": true,
+    ".github/": true,
+    "dist/": true,
+    "node_modules": true,
+    ".editorconfig": true,
+    ".firebaserc": true,
+    ".gitignore": true,
+    "package-lock.json": true
+  },
+  "hidefiles.selectedProfile": "Default"
+}
