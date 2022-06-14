@@ -1,9 +1,18 @@
 <template>
-  <span>
+  <div>
     Welcome to Me.
-  </span>
+  </div>
 </template>
 
 <script>
-export default {}
+export default {
+  head: {
+    title: 'Lincoln Garcia',
+    meta: [
+      {
+        description: "Looking for fast, seamless webistes? I'm the Software Engineer for you."
+      }
+    ]
+  }
+}
 </script>
