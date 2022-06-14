@@ -7,4 +7,5 @@
 html{
   background-color: black;
   color: rgb(233, 233, 233);
+  @apply px-80
 }
