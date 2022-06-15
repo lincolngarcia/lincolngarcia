@@ -50,7 +50,7 @@ export default {
     transform: translateY(-66%);
   }
   100% {
-    transform: translateY(0%);
+    transform: translateY(-66%);
   }
 
 }
