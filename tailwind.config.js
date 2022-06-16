@@ -4,7 +4,8 @@ export const theme = {
       '15_100': "15%"
     },
     colors: {
-      'red': '#b41919'
+      'red': '#b41919',
+      gray: 'rgb(233, 233, 233)'
     },
     spacing: {
       "0.25": "0.25rem",

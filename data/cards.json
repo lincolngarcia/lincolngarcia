@@ -1,0 +1,27 @@
+{
+  "About": {
+    "image": "",
+    "text" : "I'm an independent contractor located in the Shenandoah Valley."
+  },
+  "Experience": {
+    "image": "",
+    "text" : "I have three years of experience working with web design, one year of experience contracting."
+  },
+  "Resume": {
+    "image": "",
+    "text" : "SVU.EDU"
+  },
+  "Schooling": {
+    "image": "",
+    "text" : "Rockbridge County Highschool -- Southern Virginia University"
+  },
+  "Contact": {
+    "image": "",
+    "text" : "admin@lincolngarcia.dev"
+  },
+  "Rates": {
+    "image": "",
+    "text" : "$20-30/hr depending on project complexity."
+  }
+
+}
