@@ -1,5 +1,5 @@
 import * as jose from "jose";
-import Cookie from 'cookie'
+import Cookie from 'js-cookie'
 import {GoogleAuth, OAuth2Client} from 'google-auth-library'
 
 export const OAuth2Init = async (googleConfig) => {
@@ -29,16 +29,15 @@ export const OAuth2Init = async (googleConfig) => {
 
   function callback(response) {
     console.log(`${googleConfig.cookieName}: ${response.credential}`)
-    try{Cookie.serialize(googleConfig.cookieName, response.credential)}catch(e){console.log(e)}
+    Cookie.set(googleConfig.cookieName, response.credential, {expires: 1/24})
     console.log(document.cookie)
-    // console.log(jose.decodeJwt(response.credential));
-    // verifyIdToken(response.credential);
+      // console.log(jose.decodeJwt(response.credential));
+    verifyIdToken(response.credential);
   }
 
   async function verifyIdToken(idToken) {
     console.log('verifying id token')
     const client = new OAuth2Client(googleConfig.clientId);
-    console.log(client)
 
     async function verify() {
       const ticket = await client.verifyIdToken({
@@ -48,8 +47,8 @@ export const OAuth2Init = async (googleConfig) => {
       const payload = ticket.getPayload();
       const userid = payload["sub"];
 
-      if (userid === Cookie.parse(googleConfig.cookieName)["sub"]) {
-        console.log('log in successful')
+      if (userid === jose.decodeJwt(Cookie.get(googleConfig.cookieName)).sub) {
+        
       }else{
         console.log('log in failure')
       }
