@@ -1,0 +1,14 @@
+{
+  "archived": false,
+  "clientId": null,
+  "clientName": null,
+  "data": {
+    "totalInvoiced": null,
+    "totalHours": null,
+    "totalProjects": null,
+    "firstProject": null
+  },
+  "projects": {
+
+  }
+}

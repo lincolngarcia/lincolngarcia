@@ -38,11 +38,26 @@ export default {
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: [],
+  modules: [
+    
+  ],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {},
+  build: {
+    extend (config, ctx) {
+      config.node = {
+          fs: "empty",
+          child_process: "empty",
+          net: "empty",
+          tls: "empty"
+      };
+  }
+  },
   publicRuntimeConfig: {
+    google: {
+      clientId: '200152911760-vlite9ldco8aied4f4u2f4mmhsa2ihiq.apps.googleusercontent.com',
+      cookieName: 'idToken'
+    },
     firebase: {
       apiKey: "AIzaSyAsQZq3drsnqq1aUyrX9Thp69doraSk22c",
       authDomain: "lincolngarcia-dev.firebaseapp.com",

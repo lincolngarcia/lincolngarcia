@@ -11,7 +11,7 @@
     <br />
     <br />
     <br />
-    <template v-for="(card, index, iteration) in cards">
+    <!--<template v-for="(card, index, iteration) in cards">
       <div class="container px-24" :key="index">
         <card
           :image="card.image"
@@ -21,7 +21,7 @@
         </card>
       <hr class='w-full border-gray'>
       </div> 
-    </template>
+    </template>-->
   </div>
 </template>
 
@@ -48,4 +48,50 @@ export default {
 };
 </script>
 
-<style></style>
+<style>
+html{
+  animation-name: redFont;
+  animation-duration: 3s;
+  animation-delay: 6s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  }
+
+@keyframes redFont {
+  0% {
+    color: rgb(233, 233, 233)
+  }
+  100% {
+    color: #b41919
+  }
+}
+
+.lineUp {
+  animation: 8s anim-lineUp ease-out 1;
+  animation-fill-mode: forwards;
+}
+@keyframes anim-lineUp {
+  0% {
+    transform: translateY(0%);
+  }
+  10% {
+    transform: translateY(0%);
+  }
+  30% {
+    transform: translateY(-32%);
+  }
+  40% {
+    transform: translateY(-32%);
+  }
+  60% {
+    transform: translateY(-66%);
+  }
+  70% {
+    transform: translateY(-66%);
+  }
+  100% {
+    transform: translateY(-66%);
+  }
+
+}
+  </style>
