@@ -1,27 +1,33 @@
 {
   "About": {
-    "image": "",
-    "text" : "My name is Lincoln Garcia. I'm an independent Software "
+    "imagePath": "",
+    "text" : "My name is Lincoln Garcia. I'm an independent Software Engineer located in the Eastern Standard Time Zone (EST).",
+    "cardTitle": "About Me"
   }, 
   "Experience": {
-    "image": "",
-    "text" : "I have three years of experience working with web design, one year of experience contracting."
+    "imagePath": "",
+    "text" : "I have three years of experience working with web design, one year of experience contracting.",
+    "cardTitle": "Experience"
   },
   "Resume": {
-    "image": "",
-    "text" : "SVU.EDU"
+    "imagePath": "",
+    "text" : "SVU.EDU",
+    "cardTitle": "Current Employment"
   },
   "Schooling": {
-    "image": "front-page/valley.png",
-    "text" : "I attended Rockbridge County Highschool and am currently attending Southern Virginia University, located in the Shenandoah Valley"
+    "imagePath": "front-page/valley.png",
+    "text" : "I attended Rockbridge County Highschool and am currently attending Southern Virginia University, located in the Shenandoah Valley",
+    "cardTitle": "Education"
   },
   "Contact": {
-    "image": "",
-    "text" : "lincolngarcia.dev@gmail.com"
+    "imagePath": "",
+    "text" : "lincolngarcia.dev@gmail.com",
+    "cardTitle": "Contact"
   },
   "Rates": {
-    "image": "",
-    "text" : "$25-50/hr depending on project complexity."
+    "imagePath": "",
+    "text" : "$25-50/hr depending on project complexity.",
+    "cardTitle": "Rates"
   }
 
 }

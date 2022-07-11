@@ -11,11 +11,11 @@
     <br />
     <br />
     <br />
-    <div>
+    <div class='p1'>
       <card
         v-for="(card, index, iteration) in cards"
-        :imagePath="card.image"
-        :orientation="iteration % 2 == 0 ? 'right' : 'left'"
+        v-bind='card'
+        :orientation="iteration % 2 == 0"
         :key="card.title"
       >
         {{ card.text }}

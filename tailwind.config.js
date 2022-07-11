@@ -18,7 +18,7 @@ module.exports = {
     },
     fontFamily: {
       sans: ['"Sohne"', 'serif'],
-      serif: ["'DM Serif Display'", 'sans-serif'],
+      serif: ['sans-serif']
     },
     fontSize: {
       p1: [
