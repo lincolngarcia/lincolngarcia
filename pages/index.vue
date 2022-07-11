@@ -5,7 +5,7 @@
     <p class="p2 text-center">
       Contact
       <a href="mailto: lincolngarcia.dev@gmail.com" class="underline">me</a>
-      for a custom website, specialized just for you.
+      for a custom website, specialized just for you. If you are me, go <nuxt-link to='/admin' class='underline' prefetch>here.</nuxt-link>
     </p>
     <br />
     <br />

@@ -1,6 +1,6 @@
 <template>
-  <div class='perfectcenter h-full absolute inset-0'>
-    <div class="bg-white h-50 w-40 perfectcenter">
+  <div class='perfectcenter h-full w-full inset-0 md:mt-200 lg:mt-300'>
+    <div class="perfectcenter bg-white h-50 w-40">
       <div id='google_sign_in' />
     </div>
   </div>
@@ -13,7 +13,7 @@
       title: 'ADMIN'
     },
     created(){
-      OAuth2Init(this.$config.google)
+      OAuth2Init(this.$config.google, this)
     }
   }
 </script>

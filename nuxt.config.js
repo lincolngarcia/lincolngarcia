@@ -1,4 +1,4 @@
-import {resolve} from 'path'
+import { resolve } from "path";
 export default {
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
   ssr: false,
@@ -19,14 +19,10 @@ export default {
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: [
-    '~/css/sovereign.css'
-  ],
+  css: ["~/css/sovereign.css"],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [
-    '~/plugins/firebase'
-  ],
+  plugins: ["~/plugins/firebase"],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
@@ -38,26 +34,28 @@ export default {
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: [
-    "~/modules/routers",
-    "@nuxt/image"
-  ],
+  modules: ["~/modules/routers", "@nuxt/image"],
+
+  //Middleware
+  serverMiddleware: ['~/server.js'],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
-    extend (config, ctx) {
+    extend(config, ctx) {
       config.node = {
-          fs: "empty",
-          child_process: "empty",
-          net: "empty",
-          tls: "empty"
+        fs: "empty",
+        child_process: "empty",
+        net: "empty",
+        tls: "empty",
       };
-  }
+    },
   },
+
   publicRuntimeConfig: {
     google: {
-      clientId: '200152911760-vlite9ldco8aied4f4u2f4mmhsa2ihiq.apps.googleusercontent.com',
-      cookieName: 'idToken'
+      clientId:
+        "200152911760-vlite9ldco8aied4f4u2f4mmhsa2ihiq.apps.googleusercontent.com",
+      cookieName: "idToken",
     },
     firebase: {
       apiKey: "AIzaSyAsQZq3drsnqq1aUyrX9Thp69doraSk22c",

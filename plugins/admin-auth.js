@@ -2,7 +2,7 @@ import * as jose from "jose";
 import Cookie from 'js-cookie'
 import {GoogleAuth, OAuth2Client} from 'google-auth-library'
 
-export const OAuth2Init = async (googleConfig) => {
+export const OAuth2Init = async (googleConfig, context) => {
   addScript();
 
   function addScript() {
@@ -47,12 +47,14 @@ export const OAuth2Init = async (googleConfig) => {
       const payload = ticket.getPayload();
       const userid = payload["sub"];
 
+      console.log('validating')
       if (userid === jose.decodeJwt(Cookie.get(googleConfig.cookieName)).sub) {
-        //commit to store
-        window.location.href = "/admin/success";
+        //! commit to store
+        console.log(context)
+        context.$router.push('/admin/success')
 
       }else{
-        console.log('log in failure')
+        context.$router.push('/admin/failure')
       }
     }
     verify().catch(console.error);
