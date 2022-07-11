@@ -48,7 +48,9 @@ export const OAuth2Init = async (googleConfig) => {
       const userid = payload["sub"];
 
       if (userid === jose.decodeJwt(Cookie.get(googleConfig.cookieName)).sub) {
-        
+        //commit to store
+        window.location.href = "/admin/success";
+
       }else{
         console.log('log in failure')
       }

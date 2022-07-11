@@ -1,8 +1,8 @@
 {
   "About": {
     "image": "",
-    "text" : "I'm an independent contractor located in the Shenandoah Valley."
-  },
+    "text" : "My name is Lincoln Garcia. I'm an independent Software "
+  }, 
   "Experience": {
     "image": "",
     "text" : "I have three years of experience working with web design, one year of experience contracting."
@@ -12,16 +12,16 @@
     "text" : "SVU.EDU"
   },
   "Schooling": {
-    "image": "",
-    "text" : "Rockbridge County Highschool -- Southern Virginia University"
+    "image": "front-page/valley.png",
+    "text" : "I attended Rockbridge County Highschool and am currently attending Southern Virginia University, located in the Shenandoah Valley"
   },
   "Contact": {
     "image": "",
-    "text" : "admin@lincolngarcia.dev"
+    "text" : "lincolngarcia.dev@gmail.com"
   },
   "Rates": {
     "image": "",
-    "text" : "$20-30/hr depending on project complexity."
+    "text" : "$25-50/hr depending on project complexity."
   }
 
 }

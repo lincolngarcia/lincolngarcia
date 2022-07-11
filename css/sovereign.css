@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 /* ROOT */
 *,
 *::before,
@@ -10,17 +14,17 @@ html{
   color: rgb(233, 233, 233);
 
   font-size: 10px;
+
+  @apply mx-16;
+  @screen md {
+    @apply mx-54
+  };
+  @screen lg{
+    @apply mx-96
+  }
 }
 
-span::selection,
-div::selection,
-p::selection,
-h1::selection,
-h2::selection,
-h3::selection,
-h4::selection,
-h5::selection,
-h6::selection{
+*::selection{
   color: rgb(150, 150, 150);
   background-color: #b41919
 }
@@ -29,6 +33,115 @@ a::selection {
   color: white;
   background-color: #b41919
 }
+
+.h1 {
+  @apply text-h3 font-serif;
+
+  @screen md {
+    @apply text-h2;
+  }
+
+  @screen lg {
+    @apply text-h1;
+  }
+}
+
+.h2 {
+  @apply text-h4 font-serif;
+
+  @screen md {
+    @apply text-h3;
+  }
+
+  @screen lg {
+    @apply text-h2;
+  }
+}
+
+.h3 {
+  @apply text-h5 font-serif;
+
+  @screen md {
+    @apply text-h4;
+  }
+
+  @screen lg {
+    @apply text-h3;
+  }
+}
+
+.h4 {
+  @apply text-p1 font-serif;
+
+  @screen md {
+    @apply text-h5;
+  }
+
+  @screen lg {
+    @apply text-h4;
+  }
+}
+
+.h5 {
+  @apply text-p2 font-serif;
+
+  @screen md {
+    @apply text-p1;
+  }
+
+  @screen lg {
+    @apply text-h5;
+  }
+}
+
+.p1 {
+  @apply text-p3 font-serif;
+
+  @screen md {
+    @apply text-p2;
+  }
+
+  @screen lg {
+    @apply text-p1;
+  }
+}
+
+.p2 {
+  @apply text-p4 font-serif;
+
+  @screen md {
+    @apply text-p3;
+  }
+
+  @screen lg {
+    @apply text-p2;
+  }
+}
+
+.p3 {
+  @apply text-p5 font-serif;
+
+  @screen md {
+    @apply text-p4;
+  }
+
+  @screen lg {
+    @apply text-p3;
+  }
+}
+
+.p4 {
+  @apply text-p6 font-serif;
+
+  @screen md {
+    @apply text-p5;
+  }
+
+  @screen lg {
+    @apply text-p4;
+  }
+}
+
 
 /* Custom Classes*/
 

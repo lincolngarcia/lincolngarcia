@@ -39,7 +39,8 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
-    
+    "~/modules/routers",
+    "@nuxt/image"
   ],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
