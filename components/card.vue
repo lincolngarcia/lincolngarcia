@@ -3,7 +3,7 @@
     <h1 class='h3 text-center'>{{cardTitle}}</h1>
     <div class='md:flex md:gap-5 mb-10' :class='orientation ? "flex text-right" : "flex-row-reverse text-left"'>
       <nuxt-img
-        :src="`/img/${imagePath}`"
+        src="/img/front-page/valley.png"
         width="250px"
         height="150px"
         class="border-dashed border-[1px] mx-auto"
@@ -12,7 +12,7 @@
         <slot />
       </div>
     </div>
-      <hr :key="index" class="w-full border-gray" />
+      <hr class="w-full border-gray" />
   </div>
 </template>
 

@@ -15,7 +15,7 @@
     "cardTitle": "Current Employment"
   },
   "Schooling": {
-    "imagePath": "front-page/valley.png",
+    "imagePath": "/img/front-page/valley.png",
     "text" : "I attended Rockbridge County Highschool and am currently attending Southern Virginia University, located in the Shenandoah Valley",
     "cardTitle": "Education"
   },

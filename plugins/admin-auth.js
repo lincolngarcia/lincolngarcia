@@ -28,15 +28,11 @@ export const OAuth2Init = async (googleConfig, context) => {
   }
 
   function callback(response) {
-    console.log(`${googleConfig.cookieName}: ${response.credential}`)
     Cookie.set(googleConfig.cookieName, response.credential, {expires: 1/24})
-    console.log(document.cookie)
-      // console.log(jose.decodeJwt(response.credential));
     verifyIdToken(response.credential);
   }
 
   async function verifyIdToken(idToken) {
-    console.log('verifying id token')
     const client = new OAuth2Client(googleConfig.clientId);
 
     async function verify() {
@@ -47,10 +43,8 @@ export const OAuth2Init = async (googleConfig, context) => {
       const payload = ticket.getPayload();
       const userid = payload["sub"];
 
-      console.log('validating')
       if (userid === jose.decodeJwt(Cookie.get(googleConfig.cookieName)).sub) {
         //! commit to store
-        console.log(context)
         context.$router.push('/admin/success')
 
       }else{

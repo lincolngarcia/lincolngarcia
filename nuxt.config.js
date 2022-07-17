@@ -34,11 +34,10 @@ export default {
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: ["~/modules/routers", "@nuxt/image"],
+  modules: ["@nuxt/image"],
 
   //Middleware
-  serverMiddleware: ['~/server.js'],
-
+  serverMiddleware: ["~/server.js"],
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
     extend(config, ctx) {
@@ -66,5 +65,8 @@ export default {
       appId: "1:502808945733:web:8a6859f7d4f7698c4eaf2c",
       measurementId: "G-RD27N65NDM",
     },
+  },
+  privateRuntimeConfig: {
+    adminSub: "test",
   },
 };

@@ -16,7 +16,7 @@
         v-for="(card, index, iteration) in cards"
         v-bind='card'
         :orientation="iteration % 2 == 0"
-        :key="card.title"
+        :key="index"
       >
         {{ card.text }}
       </card>

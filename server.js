@@ -3,6 +3,7 @@ export default function (req, res, next) {
   switch (req.url) {
     case '/admin/success': 
     console.log('attempted user login')
+    
     break;
   }
   next()
