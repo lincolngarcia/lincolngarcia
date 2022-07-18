@@ -15,6 +15,7 @@ module.exports = {
     colors: {
       transparent: 'transparent',
       black: '#333333',
+      red: '#b41919',
     },
     fontFamily: {
       sans: ['"Sohne"', 'serif'],
