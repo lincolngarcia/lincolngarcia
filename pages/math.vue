@@ -92,7 +92,7 @@ export default {
     },
     check() {
       if (this.input == this.top * this.bottom) {
-        alert(`correct ${this.top} X ${this.bottom} = ${this.input}`);
+        alert(`Correct! ${this.top} X ${this.bottom} = ${this.input}`);
         this.top = null;
         this.bottom = null;
         this.input = null;
